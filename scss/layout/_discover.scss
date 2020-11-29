@@ -1,0 +1,37 @@
+.discover-content {
+  @include sectionSpacing();
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .discover-info {
+    color: color(white);
+
+    h3 {
+      @include headingStyles();
+      color: color(black);
+      font-size: size(xs);
+    }
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl) + 2rem;
+      color: color(black);
+    }
+
+    p {
+      font-size: size(md);
+      width: 85%;
+      margin: 2rem 0;
+      color: color(black);
+    }
+  }
+
+  .discover-img {
+    width: 100%;
+    max-width: 70rem;
+  }
+}

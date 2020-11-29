@@ -1,15 +1,15 @@
 .about {
-  @include sectionSpacing();
-
   background-color: color(black);
+  box-shadow: 0.5rem 0.5rem 5rem color(black);
 
   .about-content {
+    @include sectionSpacing();
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 100vh;
 
     .about-info {
       color: color(white);
@@ -22,12 +22,12 @@
 
       h2 {
         @include headingStyles();
-        font-size: size(xl);
+        font-size: size(xl) + 2rem;
       }
 
       p {
-        font-size: size(xs);
-        width: 80%;
+        font-size: size(md);
+        width: 85%;
         margin: 2rem 0;
       }
     }

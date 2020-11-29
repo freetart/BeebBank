@@ -18,5 +18,19 @@
 
   &-2 {
     width: 30%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &-dark {
+    color: color(white);
+    background-color: color(black);
+    width: 30%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
