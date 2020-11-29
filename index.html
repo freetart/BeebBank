@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="images/darkblue.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -10,9 +11,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.min.css" />
-    <title>Document</title>
+    <title>BeebBank</title>
   </head>
   <body>
+    <!-- HEADER & NAV -->
+    <header class="header">
+      <div class="logo">
+        <h3>Beeb<span>Bank</span></h3>
+      </div>
+      <nav class="navigation">
+        <a href="#about">About</a>
+        <a href="#discover">Discover</a>
+        <a href="#services">Services</a>
+        <a href="#signup">Sign Up</a>
+      </nav>
+      <button class="btn">Sign Up</button>
+    </header>
+    <!-- END OF HEADER & NAV -->
+    <!-- HERO -->
+    <section class="hero">
+      <div class="video-overlay"></div>
+      <div class="video-bg-wrapper">
+        <video autoplay muted loop class="video-bg">
+          <source src="video/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-content">
+        <h1><span>Virtual</span> Banking Made <span>Easy</span></h1>
+        <p>
+          Sign up for a new account today and receive $250 in credit towards
+          your next payment
+        </p>
+        <button class="btn hero-btn">Get Started</button>
+      </div>
+    </section>
+    <!-- END OF HERO -->
     <script src="js/app.js"></script>
   </body>
 </html>

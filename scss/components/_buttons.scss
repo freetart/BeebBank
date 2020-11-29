@@ -1,0 +1,17 @@
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  color: color(white);
+  font-family: "Open Sans", sans-serif;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 0.1rem solid color(primary);
+  font-size: size(sm);
+  transition: all 0.3s ease;
+  width: 10rem;
+
+  &:hover {
+    border: 0.1rem solid color(white);
+    color: color(primary);
+  }
+}
