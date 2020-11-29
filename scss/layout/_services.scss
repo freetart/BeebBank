@@ -1,5 +1,6 @@
 .services {
   background-color: color(black);
+  box-shadow: 0.5rem 0.5rem 5rem color(black);
 
   .services-content {
     @include sectionSpacing();
