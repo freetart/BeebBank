@@ -28,6 +28,7 @@
     color: color(white);
     background-color: color(black);
     width: 30%;
+    border: 0.1rem solid color(black);
 
     &:hover {
       transform: scale(1.1);
