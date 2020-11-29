@@ -1,0 +1,40 @@
+.about {
+  @include sectionSpacing();
+
+  background-color: color(black);
+
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+
+    .about-info {
+      color: color(white);
+
+      h3 {
+        @include headingStyles();
+        color: color(primary);
+        font-size: size(xs);
+      }
+
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      p {
+        font-size: size(xs);
+        width: 80%;
+        margin: 2rem 0;
+      }
+    }
+
+    .about-img {
+      width: 100%;
+      max-width: 70rem;
+    }
+  }
+}

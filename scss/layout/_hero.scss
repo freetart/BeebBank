@@ -1,3 +1,7 @@
+.hero {
+  height: 100vh;
+}
+
 .video-bg-wrapper {
   position: absolute;
   top: 0;
@@ -5,11 +9,11 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
 
-  .video-bg {
-    min-width: 100%;
-    min-height: 100%;
-  }
+.video-bg {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .video-overlay {
@@ -44,9 +48,5 @@
     @include headingStyles();
     font-size: size(lg);
     margin: 3rem 0;
-  }
-
-  .hero-btn {
-    width: 30%;
   }
 }

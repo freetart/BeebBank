@@ -13,11 +13,14 @@
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 img {

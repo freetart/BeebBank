@@ -16,9 +16,9 @@
   <body>
     <!-- HEADER & NAV -->
     <header class="header">
-      <div class="logo">
+      <a href="#home" class="logo">
         <h3>Beeb<span>Bank</span></h3>
-      </div>
+      </a>
       <nav class="navigation">
         <a href="#about">About</a>
         <a href="#discover">Discover</a>
@@ -29,7 +29,7 @@
     </header>
     <!-- END OF HEADER & NAV -->
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="video-overlay"></div>
       <div class="video-bg-wrapper">
         <video autoplay muted loop class="video-bg">
@@ -42,10 +42,30 @@
           Sign up for a new account today and receive $250 in credit towards
           your next payment
         </p>
-        <button class="btn hero-btn">Get Started</button>
+        <button class="btn btn-2">Get Started</button>
       </div>
     </section>
     <!-- END OF HERO -->
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="content-container">
+        <div class="about-content">
+          <div class="about-info">
+            <h3>Premium Bank</h3>
+            <h2>Unlimited Transactions with zero fees</h2>
+            <p>
+              Get access to our exclusive app that allows you to send unlimited
+              transactions without getting charged any fees
+            </p>
+            <button class="btn btn-2">Get Started</button>
+          </div>
+          <div class="about-img">
+            <img src="images/transferMoney.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF ABOUT -->
     <script src="js/app.js"></script>
   </body>
 </html>
