@@ -1,0 +1,127 @@
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+
+  .modal {
+    background-color: color(white);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 70%;
+    animation-name: modalOpen;
+    animation-duration: 1s;
+    border: 0.5rem solid color(primary);
+
+    @include response(sm) {
+      width: 90%;
+    }
+
+    .modal-header {
+      background: color(black);
+      color: color(primary);
+      padding: 1.5rem;
+      text-align: center;
+
+      h3 {
+        @include headingStyles();
+        font-size: size(lg);
+        margin: 0;
+      }
+    }
+
+    .modal-content {
+      padding: 2rem;
+      background-color: color(black);
+    }
+
+    .modal-form div {
+      margin: 5rem 0;
+    }
+
+    .modal-form label {
+      @include headingStyles();
+      font-size: size(xs);
+      display: block;
+      margin-bottom: 0.5rem;
+      color: color(primary);
+    }
+
+    .modal-form .form-input {
+      padding: 0.8rem;
+      width: 100%;
+      border: 0;
+      border-bottom: 0.3rem solid color(primary);
+      background-color: color(black);
+      color: color(white);
+      outline: none;
+    }
+
+    input:-webkit-autofill {
+      box-shadow: 0 0 0px 1000px #000 inset;
+    }
+
+    input:-webkit-autofill:first-line {
+      color: color(primary);
+    }
+
+    .submit-btn {
+      cursor: pointer;
+      background-color: transparent;
+      color: color(primary);
+      font-family: "Open Sans", sans-serif;
+      padding: 0.8rem;
+      border-radius: 1rem;
+      border: 0.1rem solid color(primary);
+      font-size: size(sm);
+      transition: all 0.5s ease;
+      width: 100%;
+      outline: 0;
+
+      &:hover {
+        transform: translateY(-1rem);
+      }
+    }
+
+    .close-btn {
+      cursor: pointer;
+      background: transparent;
+      font-size: size(lg);
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+      color: color(primary);
+      border: 0;
+      transition: color 0.3s ease;
+      outline: 0;
+
+      &:hover {
+        color: darken(color(primary), 20%);
+      }
+    }
+  }
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
