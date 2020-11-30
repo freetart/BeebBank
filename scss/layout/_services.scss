@@ -4,7 +4,7 @@
 
   .services-content {
     @include sectionSpacing();
-    height: 100vh;
+    // height: 100vh;
     @include flexLayout();
 
     h2 {
@@ -12,7 +12,11 @@
       text-align: center;
       color: color(white);
       font-size: size(xl) + 2rem;
-      margin-bottom: 5rem;
+      margin: 5rem 0;
+
+      @include response(xxl) {
+        font-size: size(xl);
+      }
 
       span {
         color: color(primary);
@@ -23,6 +27,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 2rem;
+
+      @include response(xxl) {
+        grid-template-columns: 1fr;
+        margin-bottom: 5rem;
+      }
     }
 
     .card {
@@ -35,6 +44,11 @@
       img {
         width: 30rem;
         height: 30rem;
+
+        @include response(xxl) {
+          width: 25rem;
+          height: auto;
+        }
       }
 
       h3 {

@@ -8,9 +8,12 @@
   z-index: 10;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.9);
-  // border: 0.3rem solid color(white);
 
   .logo {
+    @include response(lg) {
+      margin: 0 auto;
+    }
+
     h3 {
       @include headingStyles();
       color: color(white);
@@ -28,6 +31,10 @@
       font-size: size(sm);
       margin-right: 3rem;
       transition: color 0.3s ease;
+
+      @include response(lg) {
+        display: none;
+      }
 
       &:hover {
         color: color(primary);

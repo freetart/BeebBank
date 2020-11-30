@@ -9,6 +9,14 @@
     grid-gap: 2rem;
     margin-bottom: 2rem;
 
+    @include response(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include response(xs) {
+      grid-template-columns: 1fr;
+    }
+
     h4 {
       color: color(white);
       font-size: size(sm);
@@ -35,6 +43,7 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 
     a {
       color: color(white);

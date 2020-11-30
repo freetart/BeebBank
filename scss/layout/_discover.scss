@@ -7,8 +7,16 @@
   justify-content: center;
   height: 100vh;
 
+  @include response(lg) {
+    grid-template-columns: 1fr;
+  }
+
   .discover-info {
     color: color(white);
+
+    @include response(lg) {
+      order: -1;
+    }
 
     h3 {
       @include headingStyles();
@@ -20,6 +28,10 @@
       @include headingStyles();
       font-size: size(xl) + 2rem;
       color: color(black);
+
+      @include response(md) {
+        font-size: size(xl);
+      }
     }
 
     p {
@@ -27,6 +39,10 @@
       width: 85%;
       margin: 2rem 0;
       color: color(black);
+
+      @include response(md) {
+        font-size: size(sm);
+      }
     }
   }
 

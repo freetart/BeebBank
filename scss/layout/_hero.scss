@@ -39,6 +39,10 @@
     @include headingStyles();
     font-size: size(xl) + 2rem;
 
+    @include response(sm) {
+      font-size: size(xl) + 0.3rem;
+    }
+
     span {
       color: color(primary);
     }
@@ -48,5 +52,9 @@
     @include headingStyles();
     font-size: size(lg);
     margin: 3rem 0;
+
+    @include response(sm) {
+      font-size: size(xs) + 0.1rem;
+    }
   }
 }

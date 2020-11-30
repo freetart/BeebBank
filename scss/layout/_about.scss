@@ -11,6 +11,10 @@
     justify-content: center;
     height: 100vh;
 
+    @include response(lg) {
+      grid-template-columns: 1fr;
+    }
+
     .about-info {
       color: color(white);
 
@@ -23,12 +27,20 @@
       h2 {
         @include headingStyles();
         font-size: size(xl) + 2rem;
+
+        @include response(md) {
+          font-size: size(xl);
+        }
       }
 
       p {
         font-size: size(md);
         width: 85%;
         margin: 2rem 0;
+
+        @include response(md) {
+          font-size: size(sm);
+        }
       }
     }
 
